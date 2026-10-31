@@ -26,6 +26,8 @@ jobs:
           gradle-version: '9.3.1'
       - name: Set up Android SDK
         uses: android-actions/setup-android@v3
+        with:
+          accept-android-sdk-licenses: false
       - name: Install Android SDK packages
         run: sdkmanager "platform-tools" "platforms;android-36" "platforms;android-36.1" "build-tools;36.0.0"
       - name: Prepare native Sherpa-ONNX KWS runtime and wake-word model
