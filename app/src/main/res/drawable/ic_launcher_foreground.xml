@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+    <!-- Outer cyber ring -->
+    <path
+        android:strokeColor="#7B6EF6"
+        android:strokeWidth="3.5"
+        android:fillColor="#187B6EF6"
+        android:pathData="M54,54m-26,0a26,26 0,1 1,52 0a26,26 0,1 1,-52 0"/>
+    <!-- Inner glowing orb -->
+    <path
+        android:fillColor="#407B6EF6"
+        android:pathData="M54,54m-15,0a15,15 0,1 1,30 0a15,15 0,1 1,-30 0"/>
+    <!-- Core quantum nucleus -->
+    <path
+        android:fillColor="#A89FF8"
+        android:pathData="M54,54m-7,0a7,7 0,1 1,14 0a7,7 0,1 1,-14 0"/>
+    <!-- Crosshair nodes -->
+    <path
+        android:strokeColor="#34D399"
+        android:strokeWidth="3"
+        android:strokeLineCap="round"
+        android:pathData="M54,23L54,31"/>
+    <path
+        android:strokeColor="#34D399"
+        android:strokeWidth="3"
+        android:strokeLineCap="round"
+        android:pathData="M54,77L54,85"/>
+    <path
+        android:strokeColor="#34D399"
+        android:strokeWidth="3"
+        android:strokeLineCap="round"
+        android:pathData="M23,54L31,54"/>
+    <path
+        android:strokeColor="#34D399"
+        android:strokeWidth="3"
+        android:strokeLineCap="round"
+        android:pathData="M77,54L85,54"/>
+</vector>

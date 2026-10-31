@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">EVA-1</string>
+    <string name="eva_subtitle">Companion AI v2.2.0</string>
+    <string name="tab_chat">Chat</string>
+    <string name="tab_agent">Agent</string>
+    <string name="tab_code">Cod</string>
+    <string name="tab_media">Media</string>
+    <string name="tab_quantum">Quantum</string>
+    <string name="tab_mesh">Swarm Mesh</string>
+    <string name="tab_offline">Offline LLM</string>
+    <string name="tab_os">OS Actions</string>
+    <string name="tab_memory">Memorie</string>
+    <string name="tab_history">Istoric</string>
+    <string name="tab_settings">Setări</string>
+</resources>

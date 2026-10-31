@@ -1,0 +1,11 @@
+{
+  "name": "EVA-1",
+  "description": "Asistent Android cu inferență locală LiteRT-LM, viziune de ecran multimodală pe modele compatibile, TTS Android și control tactil prin AccessibilityService cu verificare conservatoare.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ],
+  "versionName": "2.4.1",
+  "versionCode": 8,
+  "sherpaKws": "Sherpa-ONNX v2.0.1 native KWS, English GigaSpeech wake phrase HEY SIRI"
+}
