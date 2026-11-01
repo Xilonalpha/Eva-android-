@@ -1395,12 +1395,14 @@ class OsOrchestratorEngine(
                 // În jocurile externe rulăm continuu la viteză de reflex; în demo intern păstrăm ritmul de 160ms
                 val shouldTick = isExternalGameForeground || (tickCount % 2 == 0)
 
+                var activePkg = externalPkg
+
                 if (shouldTick) {
                     val step = _gameBotActionsCount.value + 1
                     _gameBotActionsCount.value = step
                     val acc = EvaAccessibilityService.instance
                     val snap = acc?.refreshScreenSnapshot(externalPkg)
-                    val activePkg = snap?.activePackage
+                    activePkg = snap?.activePackage
                         ?.ifBlank { EvaAccessibilityService.lastForegroundPackage.value }
                         .orEmpty()
 
