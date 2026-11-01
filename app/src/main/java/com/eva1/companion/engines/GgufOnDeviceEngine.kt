@@ -736,7 +736,7 @@ class GgufOnDeviceEngine(private val context: Context) {
         currentCoroutineContext().ensureActive()
         val requestId = EvaNativeGguf.newRequestId()
         val job = currentCoroutineContext()[Job]
-        val cancellationHook = job?.invokeOnCompletion(onCancelling = true, invokeImmediately = true) { cause ->
+        val cancellationHook = job?.invokeOnCompletion { cause ->
             if (cause != null) EvaNativeGguf.cancel(requestId)
         }
         val reply = try {

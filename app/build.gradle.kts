@@ -14,6 +14,9 @@ android {
   compileSdk { version = release(36) { minorApiLevel = 1 } }
 
   defaultConfig {
+    ndk {
+      abiFilters += listOf("arm64-v8a")
+    }
     applicationId = "com.aistudio.eva1companion.umxece"
     minSdk = 26
     targetSdk = 36
