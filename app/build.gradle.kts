@@ -143,7 +143,7 @@ dependencies {
   // implementation(libs.moshi.kotlin)
   implementation(libs.okhttp)
   // Google AI Edge: real on-device LLM runtime for .litertlm models (separate from GGUF).
-  implementation("com.google.ai.edge.litertlm:litertlm-android:latest.release")
+  implementation("com.google.ai.edge.litertlm:litertlm-android:0.19.0")
   // implementation(libs.play.services.location)
   // implementation(libs.retrofit)
   testImplementation(libs.androidx.compose.ui.test.junit4)
