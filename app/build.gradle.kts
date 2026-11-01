@@ -88,6 +88,15 @@ googleServices { missingGoogleServicesStrategy = MissingGoogleServicesStrategy.W
 // Some unused dependencies are commented out below instead of being removed.
 // This makes it easy to add them back in the future if needed.
 dependencies {
+  constraints {
+    implementation("org.jetbrains.kotlin:kotlin-stdlib") {
+      version {
+        strictly("2.2.10")
+      }
+      because("Keep Kotlin stdlib compatible with Kotlin compiler 2.2.10")
+    }
+  }
+
   implementation(platform(libs.androidx.compose.bom))
   // implementation(platform(libs.firebase.bom))
   // implementation(libs.accompanist.permissions)
